@@ -1,0 +1,10 @@
+mapper: "data_mapping.tiny_mapper.BlogTinyMapper"
+
+queries:
+   "findById":
+     sql: "select * from blog where id = ?"
+     returnType: "data_mapping.Blog"
+
+   "findAll":
+     sql: "select * from blog"
+     returnType: "data_mapping.Blog"
